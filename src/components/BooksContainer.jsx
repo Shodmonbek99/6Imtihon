@@ -16,25 +16,8 @@ function BooksContainer() {
   return (
     <>
       <div className="flex justify-between items-center mt-10 mb-5 px-5">
-        <h1 className="text-3xl font-bold  ">Dishes {data && data.length}</h1>
-        <div className="flex gap-2">
-          <button
-            onClick={() => {
-              setGrid("grid");
-            }}
-            className={`btn btn-outline   ${activeGrid()}  `}
-          >
-            <HiViewGrid />
-          </button>
-          <button
-            onClick={() => {
-              setGrid("list");
-            }}
-            className={`btn btn-outline  ${activeList()}  `}
-          >
-            <HiViewList className=" " />
-          </button>
-        </div>
+        <h1 className="text-3xl font-bold  ">Kitchen {data && data.length}</h1>
+        
       </div>
       <hr />
       {grid == "grid" ?
