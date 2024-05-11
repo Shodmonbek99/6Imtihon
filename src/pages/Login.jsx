@@ -38,7 +38,7 @@ function Login() {
         <Link to="/singup" 
            type="button" 
            className="btn btn-primary w-full">
-            Singup
+            Signup
         </Link>
       </div>
      </div>

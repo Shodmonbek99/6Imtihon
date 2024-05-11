@@ -1,4 +1,5 @@
 import { Form, Link } from "react-router-dom";
+import InputForm from "../components/InputForm";
 import { useActionData } from "react-router-dom";
 import useSingup from "../hooks/useSingup";
 export let action = async ({ request }) => {
@@ -38,19 +39,19 @@ function Singup() {
            
           <button
             onClick={handleSubmit}
-            className="btn btn-succes w-full mb-3 mt-3" >    
+            className="btn btn-outline btn-success w-full mb-3 mt-3" >    
             Submit
           </button>
         </Form>
         <button
           onClick={handleGoogle}
           type="button"
-          className="btn btn-secondary w-full mb-3"   >     
+          className="btn btn-outline btn-accent w-full mb-3"   >     
            Signup
         </button>
         <Link to="/login" 
         type="button" 
-        className="btn btn-info w-full">
+        className="btn btn-outline btn-primary w-full">
           Login
         </Link>
       </div>

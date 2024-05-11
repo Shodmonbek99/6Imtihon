@@ -22,11 +22,11 @@ function BooksGrid() {
                 className="card w-96 border grow bg-base-100 shadow-xl m-10 md:w-96  "
               >
                 <figure className="">
-                  <img
+                  {/* <img
                     className=" h-72 pt-2 object-fill size-80 rounded-md border-b-2 border-cyan-400"
                     src={dish.image}
                     alt="dish"
-                  />
+                  /> */}
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title flex justify-between items-baseline ">

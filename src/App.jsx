@@ -54,15 +54,16 @@ function App() {
       ],
     },
     {
-      path: "/login",
-      element: user ? <Navigate to="/" /> : <Login />,
-      action: actionLogin,
-    },
-    {
       path: "/singup",
       element: user ? <Navigate to="/" /> : <Singup />,
       action: actionSingup,
     },
+    {
+      path: "/login",
+      element: user ? <Navigate to="/" /> : <Login />,
+      action: actionLogin,
+    },
+   
   ]);
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
