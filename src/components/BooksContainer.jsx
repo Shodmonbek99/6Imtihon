@@ -6,10 +6,10 @@ import { HiViewGrid, HiViewList } from "react-icons/hi";
 function BooksContainer() {
   let [grid, setGrid] = useState("grid");
   let activeGrid = () => {
-    return grid == "grid" ? "bg-accent" : "bg-red";
+    return grid == "grid" ? "bg-primary" : "bg-green";
   };
   let activeList = () => {
-    return grid == "grid" ? " bg-red" : "bg-accent";
+    return grid == "grid" ? " bg-green" : "bg-primary";
   };
   let { data } = useCollection();
 

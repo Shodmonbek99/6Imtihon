@@ -1,9 +1,7 @@
 import React from "react";
 import { About, Contact, Crerate, Home, Login, Singup } from "./pages";
-import {
-  Navigate,
-  RouterProvider,
-  createBrowserRouter,
+import {  Navigate, RouterProvider,  createBrowserRouter,
+ 
 } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import ProucterRouter from "./components/ProucterRouter";
@@ -37,7 +35,7 @@ function App() {
         {
           index: true,
           element: <Home />,
-          // loader :
+         
         },
         {
           path: "/contact",

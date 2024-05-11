@@ -9,7 +9,7 @@ import {
 import { auth } from "../firebase/firebaseConfig";
 
 import { useActionData } from "react-router-dom";
-// import { action } from "../pages/Singup";
+
 import toast from "react-hot-toast";
 import useGlobalContext from "./useGlobalContext";
 
@@ -63,7 +63,7 @@ function useSingup() {
           const errorMessage = error.message;
           toast.error(errorMessage);
 
-          // ..
+    
         });
     }
   };
