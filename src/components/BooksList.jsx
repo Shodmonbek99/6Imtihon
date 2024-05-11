@@ -13,41 +13,7 @@ function BooksList() {
           <span className="loading loading-spinner loading-md "></span>
         </h3>
       )}
-      {/* <ul className="flex flex-col items-center justify-center gap-3 my-3">
-        {data &&
-          data.map((dish, id) => {
-            return (
-              <li
-                key={id}
-                className=" border p-5 rounded-xl lg:w-[40rem] flex gap-10 w-full "
-              >
-                <figure className=" place-content-center ">
-                  
-                </figure> 
-                 <div>
-                  <div className="flex items-baseline justify-between mb-1">
-                    <h1 className="text-xl font-bold ">{dish.name}</h1>
-                  </div>
-                  <p className="line-clamp-3 lg:w-[30rem] mb-2 w-full ">
-                    {dish.description}
-                  </p>
-                  <div className="flex gap-10 items-baseline ">
-                    <span className=" text-accent"> Time: {dish.time}</span>
-                  </div>
-                  <div className="card-actions justify-between flex line-clamp-4">
-                    <p className="bg-transparent">
-                      Ingredients: {dish.Ingredients}
-                    </p>
-
-                    <Link to={`/dish/${dish.name}`} className="btn btn-primary">
-                      even more
-                    </Link>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
-      </ul> */}
+      
     </>
   );
 }

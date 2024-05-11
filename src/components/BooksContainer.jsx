@@ -15,7 +15,7 @@ function BooksContainer() {
 
   return (
     <>
-      {/* <div className="flex justify-between items-center mt-10 mb-5 px-5">
+      <div className="flex justify-between items-center mt-10 mb-5 px-5">
         <h1 className="text-3xl font-bold  ">Dishes {data && data.length}</h1>
         <div className="flex gap-2">
           <button
@@ -36,8 +36,9 @@ function BooksContainer() {
           </button>
         </div>
       </div>
-      <hr /> */}
-      {grid == "grid" ? <BooksGrid /> : <BooksList />}
+      <hr />
+      {grid == "grid" ?
+       <BooksGrid /> : <BooksList />} 
     </>
   );
 }
