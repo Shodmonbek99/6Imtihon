@@ -71,7 +71,9 @@ function App() {
       dispetch({ type: "AUTH_READY" });
     });
   }, []);
-  return <>{authReady && <RouterProvider router={routers} />}</>;
+  return<>{authReady && <RouterProvider router={routers} />}</>;
+  
+  
 }
 
 export default App;
